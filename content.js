@@ -30,8 +30,6 @@
   }
 
   function observeTitle() {
-    const titleEl = document.querySelector("title");
-    if (!titleEl) return;
     const observer = new MutationObserver(() => {
       if (!enabled) return;
       const suffix = suffixFor(getDomain());
@@ -39,7 +37,7 @@
         applySuffix();
       }
     });
-    observer.observe(titleEl, {
+    observer.observe(document.head, {
       childList: true,
       characterData: true,
       subtree: true,

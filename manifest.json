@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AW Domain Prefix",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Appends the site's domain to every tab title, so ActivityWatch (or anything else reading window titles) can identify pages whose titles don't contain the site name.",
   "permissions": ["storage"],
   "host_permissions": ["<all_urls>"],
